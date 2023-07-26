@@ -1,0 +1,8 @@
+.result {
+    width: 200px;
+
+    &:hover {
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.114);
+        transition-duration: 0.3s;
+    }
+}
