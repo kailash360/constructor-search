@@ -1,0 +1,6 @@
+.filter-sort {
+  width: fit-content;
+  font-size: small; }
+  .filter-sort select {
+    border-radius: 5px;
+    padding: 2px; }

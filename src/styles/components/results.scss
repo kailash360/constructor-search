@@ -1,8 +1,20 @@
 .result {
     width: 200px;
 
+    &-image {
+        min-height: 200px;
+    }
+
+    &-info {
+        .name, .price {
+            height: 30px;
+            font-size: small;
+        }
+    }
+
     &:hover {
         box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.114);
         transition-duration: 0.3s;
     }
+
 }

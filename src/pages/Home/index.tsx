@@ -4,9 +4,10 @@ import Results from '../../components/Results'
 import { SearchContext } from '../../context/SearchContext'
 import SearchServices from '../../api/services/search'
 import { IResult } from '../../components/Results/Result'
+import Filters from '../../components/Filter'
 
 function Home() {
-  const {searchText, setResults} = useContext(SearchContext)
+  const {searchText, setResults, results} = useContext(SearchContext)
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const search = async() => {
@@ -15,6 +16,7 @@ function Home() {
         const response = await SearchServices.search(searchText)
         const _results = response.data.response.results.map((item: any) => ({
           id: item.data.id,
+          name: item.value,
           price: item.data.price,
           image: item.data.image_url,
           description: item.data.description          
@@ -35,7 +37,11 @@ function Home() {
         <div className="text-center p-3">
           <p className="fs-5 my-3 fw-bold">Loading...</p>
         </div>
-        :<Results />
+        :
+        <>
+          {results.length > 0 && <Filters />}
+          <Results />
+        </>
       }
     </div>
   )

@@ -1,0 +1,11 @@
+.filter {
+    &-sort {
+        width: fit-content;
+        font-size: small;
+
+        select {
+            border-radius: 5px;
+            padding: 2px;
+        }
+    }
+}

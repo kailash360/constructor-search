@@ -1,0 +1,10 @@
+.result {
+  width: 200px; }
+  .result-image {
+    min-height: 200px; }
+  .result-info .name, .result-info .price {
+    height: 30px;
+    font-size: small; }
+  .result:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.114);
+    transition-duration: 0.3s; }
