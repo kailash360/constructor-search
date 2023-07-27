@@ -13,10 +13,10 @@ function Search(props: ISearch) {
 
     return (
         <div className="search row gx-1 w-75 align-items-center mx-auto">
-            <div className="input-wrapper col-10 my-1">
+            <div className="input-wrapper col-md-10 col-sm-12 my-1">
                 <input type="text" className='w-100  rounded p-2' onChange={handleSearchChange} placeholder='Enter your query here...' />
             </div>
-            <button className="col-2 rounded p-2 text-white bg-primary" type='button' onClick={props.onSearch}>Search &nbsp; <SearchLogo className='fw-bold'/> </button>
+            <button className="col-md-2 col-sm-6 rounded p-2 text-white bg-primary" type='button' onClick={props.onSearch}>Search &nbsp; <SearchLogo className='fw-bold'/> </button>
         </div>
     )
 }
