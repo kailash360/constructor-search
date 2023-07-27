@@ -1,4 +1,4 @@
-import React, { SetStateAction, useState } from 'react'
+import React, { useState } from 'react'
 import { IResult } from '../components/Results/Result';
 
 export interface ISearchContext {

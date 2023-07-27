@@ -22,7 +22,9 @@ const SORT_TYPES = [
     }
 ]
 
-export default {
+const Constants = {
     BASE_URL,
     SORT_TYPES
 }
+
+export default Constants;
